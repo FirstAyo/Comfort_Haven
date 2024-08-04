@@ -20,7 +20,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'hero-pattern': "url('/../img/sofa.jpg')",
+        'hero-pattern': "url('/../img/heroBg.png')",
         'card-img': "url('../img/kitchen.jpg')",
       }
     },
