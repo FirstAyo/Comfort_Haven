@@ -14,21 +14,27 @@
 
         <!-- header section -->
         <section class="bg-white">
-            <div class="hidden lg:flex justify-between items-center w-[90%] mx-auto h-20">
+            <div class="flex justify-between items-center w-[90%] mx-auto h-20">
                 <div class="flex flex-row justify-center items-center">
                     <img src="../img/logo.png" alt="" class="w-16 h-16">
                     <h1 class="text-2xl uppercase font-bold text-[#00334B]">Comfort <span
                             class="font-normal">Haven</span>
                     </h1>
                 </div>
-                <nav class="flex gap-10 font-semibold">
-                    <a href="#">Home</a>
-                    <a href="#">Collections</a>
-                    <a href="#">Customization</a>
-                    <a href="#">Testimonials</a>
-                    <a href="#">Contact</a>
+                <nav class="flex flex-col nav-links absolute top-[100%] lg:relative lg:top-0 lg:flex-row gap-16">
+                    <ul class="flex flex-col lg:flex-row gap-10 font-semibold items-center">
+                        <a href="#">Home</a>
+                        <a href="#">Collections</a>
+                        <a href="#">Customization</a>
+                        <a href="#">Testimonials</a>
+                        <a href="#">Contact</a>
+                    </ul>
+                    <div>
+                        <a href="#" class="text-white bg-[#00334B] py-2 px-5 rounded-full">Explore Now</a>
+                    </div>
                 </nav>
-                <a href="#" class="text-white bg-[#00334B] py-2 px-5 rounded-full">Explore Now</a>
+
+                <ion-icon name="menu-outline" onclick="onToggle(this)" class="lg:hidden text-4xl cursor-pointer" id="toggle-menu"></ion-icon>
             </div>
         </section>
 
@@ -374,6 +380,12 @@
         </footer>
 
     </section>
+
+    <script src="script.js"></script>
+
+    <!-- ionicons script for the mobile menu icon -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 
 </body>
