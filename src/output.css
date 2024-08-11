@@ -574,12 +574,8 @@ video {
   left: 10rem;
 }
 
-.top-10 {
-  top: 2.5rem;
-}
-
-.top-\[100\] {
-  top: 100;
+.top-\[-100\%\] {
+  top: -100%;
 }
 
 .top-\[100\%\] {
@@ -590,12 +586,16 @@ video {
   top: 12%;
 }
 
-.top-\[\%\] {
-  top: %;
+.top-\[10\%\] {
+  top: 10%;
 }
 
-.top-\[-100\%\] {
-  top: -100%;
+.float-start {
+  float: inline-start;
+}
+
+.float-left {
+  float: left;
 }
 
 .mx-auto {
@@ -662,10 +662,6 @@ video {
   display: grid;
 }
 
-.hidden {
-  display: none;
-}
-
 .h-16 {
   height: 4rem;
 }
@@ -714,16 +710,24 @@ video {
   height: 700px;
 }
 
-.h-\[98\%\] {
-  height: 98%;
-}
-
 .h-full {
   height: 100%;
 }
 
-.h-\[\%\] {
-  height: %;
+.h-\[10px\] {
+  height: 10px;
+}
+
+.h-\[600px\] {
+  height: 600px;
+}
+
+.min-h-\[\] {
+  min-height: ;
+}
+
+.min-h-\[35vh\] {
+  min-height: 35vh;
 }
 
 .w-16 {
@@ -771,40 +775,20 @@ video {
   width: 100%;
 }
 
+.w-\[10px\] {
+  width: 10px;
+}
+
 .w-\[\] {
   width: ;
 }
 
-.w-\[1\] {
-  width: 1;
+.w-\[100\%\/\/\] {
+  width: 100%//;
 }
 
-.w-\[1440px\] {
-  width: 1440px;
-}
-
-.w-\[1140px\] {
-  width: 1140px;
-}
-
-.w-screen {
-  width: 100vw;
-}
-
-.w-\[1128\] {
-  width: 1128;
-}
-
-.w-\[1128px\] {
-  width: 1128px;
-}
-
-.w-\[14\] {
-  width: 14;
-}
-
-.max-w-\[\] {
-  max-width: ;
+.w-\[100\] {
+  width: 100;
 }
 
 .max-w-\[1440px\] {
@@ -829,6 +813,10 @@ video {
 
 .flex-col {
   flex-direction: column;
+}
+
+.items-start {
+  align-items: flex-start;
 }
 
 .items-end {
@@ -859,6 +847,10 @@ video {
   gap: 2.5rem;
 }
 
+.gap-16 {
+  gap: 4rem;
+}
+
 .gap-2 {
   gap: 0.5rem;
 }
@@ -869,14 +861,6 @@ video {
 
 .gap-5 {
   gap: 1.25rem;
-}
-
-.gap-14 {
-  gap: 3.5rem;
-}
-
-.gap-16 {
-  gap: 4rem;
 }
 
 .rounded-3xl {
@@ -913,6 +897,16 @@ video {
 .rounded-t-xl {
   border-top-left-radius: 0.75rem;
   border-top-right-radius: 0.75rem;
+}
+
+.rounded-e-3xl {
+  border-start-end-radius: 1.5rem;
+  border-end-end-radius: 1.5rem;
+}
+
+.rounded-e {
+  border-start-end-radius: 0.25rem;
+  border-end-end-radius: 0.25rem;
 }
 
 .border {
@@ -981,21 +975,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-red-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 242 242 / var(--tw-bg-opacity));
-}
-
-.bg-red-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
-}
-
-.bg-green-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(74 222 128 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\.\.\/img\/blueChair\.png\'\)\] {
@@ -1114,9 +1093,9 @@ video {
   padding-bottom: 60%;
 }
 
-.px-1 {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .pb-10 {
@@ -1135,6 +1114,14 @@ video {
   padding-bottom: 1.25rem;
 }
 
+.pl-2 {
+  padding-left: 0.5rem;
+}
+
+.pr-2 {
+  padding-right: 0.5rem;
+}
+
 .pt-10 {
   padding-top: 2.5rem;
 }
@@ -1145,18 +1132,6 @@ video {
 
 .pt-20 {
   padding-top: 5rem;
-}
-
-.pr-2 {
-  padding-right: 0.5rem;
-}
-
-.pl-2 {
-  padding-left: 0.5rem;
-}
-
-.pr-1 {
-  padding-right: 0.25rem;
 }
 
 .text-center {
@@ -1171,6 +1146,11 @@ video {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-\[10px\] {
@@ -1190,11 +1170,6 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
 }
 
 .font-bold {
@@ -1317,6 +1292,11 @@ video {
     flex-direction: row;
   }
 
+  .md\:rounded-s-3xl {
+    border-start-start-radius: 1.5rem;
+    border-end-start-radius: 1.5rem;
+  }
+
   .md\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -1369,15 +1349,33 @@ video {
     top: 0px;
   }
 
-  .lg\:flex {
-    display: flex;
-  }
-
   .lg\:hidden {
     display: none;
   }
 
+  .lg\:h-\[600px\] {
+    height: 600px;
+  }
+
+  .lg\:min-h-fit {
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+  }
+
+  .lg\:w-\[90\%\] {
+    width: 90%;
+  }
+
   .lg\:flex-row {
     flex-direction: row;
+  }
+
+  .lg\:items-center {
+    align-items: center;
+  }
+
+  .lg\:rounded-s-3xl {
+    border-start-start-radius: 1.5rem;
+    border-end-start-radius: 1.5rem;
   }
 }
